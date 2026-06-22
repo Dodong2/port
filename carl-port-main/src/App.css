@@ -1,0 +1,76 @@
+/* Component styles */
+/* .main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-md);
+  border: 1px solid red;
+  background-color: rgba(248, 248, 255, 0.9);
+} */
+
+/* ANIMATED GRID BACKGROUND - Whole Screen Coverage */
+/* .animated-grid-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: #F8F8FF;
+  overflow: hidden;
+}
+
+.animated-grid-background .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-auto-rows: 50px;
+  width: 100%;
+  min-height: 100vh;
+  gap: 0;
+}
+
+.animated-grid-background .grid-cell {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: transparent;
+  transition: background-color 0.5s ease, opacity 0.5s ease;
+}
+
+.animated-grid-background .grid-cell.filled {
+  background-color: #000000;
+  opacity: 1;
+} */
+
+/* Responsive Grid Sizes */
+/* @media (max-width: 1200px) {
+  .animated-grid-background .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+    grid-auto-rows: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .animated-grid-background .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    grid-auto-rows: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-grid-background .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+    grid-auto-rows: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .animated-grid-background .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-auto-rows: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .animated-grid-background .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(25px, 1fr));
+    grid-auto-rows: 25px;
+  }
+} */

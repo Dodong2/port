@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Trained model — malaki, i-retrain na lang sa Render
+model/
+
+# SQLite database — mababura naman sa Render
+db/
+
+# Virtual environment (kung meron)
+venv/
+.env/
+
+# OS files
+.DS_Store

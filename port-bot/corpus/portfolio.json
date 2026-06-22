@@ -1,0 +1,716 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": {
+        "en": [
+          "hello",
+          "hi",
+          "hey",
+          "good morning",
+          "good afternoon",
+          "good evening",
+          "what's up",
+          "howdy",
+          "greetings",
+          "sup",
+          "yo",
+          "hi there",
+          "hello there",
+          "hey there",
+          "hiya",
+          "how are you",
+          "how's it going",
+          "nice to meet you"
+        ],
+        "tl": [
+          "kamusta",
+          "musta",
+          "oy",
+          "hoy",
+          "kumusta",
+          "magandang umaga",
+          "magandang hapon",
+          "magandang gabi",
+          "kumusta ka",
+          "kamusta ka na",
+          "musta na",
+          "hoy pre",
+          "magandang araw",
+          "kumusta po",
+          "kamusta naman"
+        ]
+      },
+      "responses": {
+        "en": "Hey! I'm Carl's portfolio assistant. Ask me anything about his skills, projects, or experience!",
+        "tl": "Hoy! Ako ang assistant ni Carl. Tanungin mo ako tungkol sa kanyang skills, projects, o experience!"
+      }
+    },
+    {
+      "tag": "casual",
+      "patterns": {
+        "en": [
+          "how are you",
+          "you good",
+          "what are you doing",
+          "bored",
+          "talk to me",
+          "chat with me",
+          "that's cool",
+          "nice",
+          "awesome",
+          "thanks",
+          "thank you",
+          "ty",
+          "cool",
+          "great",
+          "okay",
+          "ok",
+          "sounds good",
+          "got it",
+          "i understand",
+          "wow",
+          "really",
+          "interesting",
+          "no way",
+          "seriously"
+        ],
+        "tl": [
+          "ok lang",
+          "ayos lang",
+          "wala lang",
+          "boring",
+          "naiinip ako",
+          "usap tayo",
+          "salamat",
+          "salamat po",
+          "maraming salamat",
+          "nice",
+          "galing",
+          "ayos",
+          "wow",
+          "grabeh",
+          "totoo ba",
+          "sige",
+          "gets",
+          "oo nga",
+          "talaga",
+          "haha",
+          "hehe"
+        ]
+      },
+      "responses": {
+        "en": "Haha fair enough! I'm just a bot though, so I'm always doing great 😄 Anything I can help you with about Carl's portfolio?",
+        "tl": "Haha okay lang yan! Bot lang naman ako eh 😄 May gusto ka bang malaman tungkol sa portfolio ni Carl?"
+      }
+    },
+    {
+      "tag": "about",
+      "patterns": {
+        "en": [
+          "who are you",
+          "who is carl",
+          "tell me about carl",
+          "about carl",
+          "introduce yourself",
+          "who made this",
+          "who built this",
+          "carl arocha",
+          "carl stephen",
+          "carl stephen arocha",
+          "background",
+          "about the developer",
+          "who is the developer",
+          "describe carl",
+          "carl info",
+          "about you",
+          "are you carl",
+          "is this carl",
+          "carl is this you",
+          "am i talking to carl",
+          "who am i talking to",
+          "are you a bot",
+          "are you human",
+          "are you real"
+        ],
+        "tl": [
+          "sino si carl",
+          "tungkol kay carl",
+          "sino ka",
+          "magpakilala",
+          "sino gumawa nito",
+          "carl stephen arocha",
+          "sino ang developer",
+          "background ni carl",
+          "kwento mo si carl",
+          "sino siya",
+          "sino itong si carl",
+          "pakikilala si carl",
+          "carl ba ito",
+          "ikaw ba si carl",
+          "carl ba ikaw",
+          "sino ba kausap ko",
+          "bot ka ba",
+          "tao ka ba",
+          "totoo ka ba"
+        ]
+      },
+      "responses": {
+        "en": "Carl Stephen Arocha is a Junior Full-Stack Web Developer and a 4th-year BSIT student at Laguna State Polytechnic University, majoring in Web and Mobile Application Development. He's been building web apps since senior high school — a self-described 'vibe coder' open to freelance and entry-level roles! 🙂",
+        "tl": "Si Carl Stephen Arocha ay isang Junior Full-Stack Web Developer at 4th-year BSIT student sa Laguna State Polytechnic University, major sa Web and Mobile Application Development. Nagbe-build siya ng web apps simula pa noong senior high school — isang 'vibe coder' na bukas sa freelance at entry-level roles! 🙂"
+      }
+    },
+    {
+      "tag": "skills",
+      "patterns": {
+        "en": [
+          "skills",
+          "tech stack",
+          "technologies",
+          "what do you know",
+          "programming languages",
+          "tools",
+          "what skills does carl have",
+          "what technologies",
+          "skill set",
+          "technical skills",
+          "what does carl know",
+          "list of skills",
+          "all skills",
+          "what can carl do",
+          "show skills",
+          "his skills",
+          "technologies carl knows",
+          "programming skills"
+        ],
+        "tl": [
+          "skills",
+          "alam mo",
+          "ano ang kaya mo",
+          "teknolohiya",
+          "programming",
+          "tools",
+          "ano ang skills ni carl",
+          "ano ang alam ni carl",
+          "anong languages",
+          "anong tools",
+          "anong tech",
+          "tech stack ni carl",
+          "mga skills",
+          "lahat ng skills",
+          "anong programming languages",
+          "skills niya",
+          "anong alam niya",
+          "kaya ba ni carl"
+        ]
+      },
+      "responses": {
+        "en": "Carl's tech stack:\n• Languages: JavaScript, TypeScript, PHP, Python, Rust\n• Frontend: HTML, CSS, Tailwind, React.js/TS, Next.ts, React Native\n• Backend: Node.js, PostgreSQL, Prisma ORM, MongoDB, Firebase, MySQL\n• Tools: Vite, VS Code, Postman, Docker, MongoDB Compass",
+        "tl": "Ang tech stack ni Carl:\n• Languages: JavaScript, TypeScript, PHP, Python, Rust\n• Frontend: HTML, CSS, Tailwind, React.js/TS, Next.ts, React Native\n• Backend: Node.js, PostgreSQL, Prisma ORM, MongoDB, Firebase, MySQL\n• Tools: Vite, VS Code, Postman, Docker, MongoDB Compass"
+      }
+    },
+    {
+      "tag": "backend",
+      "patterns": {
+        "en": [
+          "backend",
+          "node",
+          "database",
+          "postgresql",
+          "mongodb",
+          "server",
+          "api",
+          "prisma",
+          "backend skills",
+          "server side",
+          "what backend",
+          "carl backend",
+          "what database does carl use",
+          "carl's database",
+          "backend technologies",
+          "carl's backend stack"
+        ],
+        "tl": [
+          "backend",
+          "server",
+          "database",
+          "api",
+          "node",
+          "anong backend",
+          "backend skills ni carl",
+          "anong database ni carl",
+          "anong server ni carl",
+          "backend ni carl",
+          "database ni carl",
+          "anong backend stack ni carl"
+        ]
+      },
+      "responses": {
+        "en": "Carl's backend experience:\n• Node.js (58%) — server-side JavaScript\n• PostgreSQL (73%) — his strongest database\n• Prisma ORM (66%) — used in his LMS project\n• MongoDB (44%) — used in the inventory system\n• Firebase (54%) — real-time features\n• MySQL (61%) — relational database\n• Socket.IO — real-time features\n\nHe's also built role-based access control systems!",
+        "tl": "Ang backend experience ni Carl:\n• Node.js (58%) — server-side JavaScript\n• PostgreSQL (73%) — pinakamalakas niyang database\n• Prisma ORM (66%) — ginamit sa LMS project\n• MongoDB (44%) — ginamit sa inventory system\n• Firebase (54%) — real-time features\n• MySQL (61%) — relational database\n• Socket.IO — real-time features\n\nNag-build na rin siya ng role-based access control systems!"
+      }
+    },
+    {
+      "tag": "skill_status",
+      "patterns": {
+        "en": [
+          "status",
+          "what is status",
+          "skill status",
+          "percentage",
+          "what does the percentage mean",
+          "proficiency",
+          "skill level",
+          "what do the numbers mean",
+          "skill percentage",
+          "port status",
+          "meaning of status",
+          "explain the numbers",
+          "skill rating",
+          "percentage in skills",
+          "skills percentage meaning",
+          "what does 80 mean",
+          "proficiency level",
+          "how good is carl"
+        ],
+        "tl": [
+          "status",
+          "ano yung status",
+          "ano ang status",
+          "ano ibig sabihin ng status",
+          "ano yung porsyento",
+          "ano ang porsyento",
+          "status ng skills",
+          "ano yung status sa skills",
+          "kahulugan ng status",
+          "porsyento sa skills",
+          "ano ibig sabihin ng porsyento sa skills",
+          "ano yung mga percentage sa skills",
+          "percentage ng skills",
+          "anong ibig sabihin non"
+        ]
+      },
+      "responses": {
+        "en": "The percentage beside each skill shows how much Carl has learned and how close he is to mastering that technology:\n• 90-100% — Mastered, uses daily (e.g. Vite 97%, CSS 93%)\n• 70-89% — Very comfortable, solid experience (e.g. JavaScript 80%)\n• 50-69% — Working knowledge, still growing (e.g. Node.js 58%)\n• Below 50% — Exploring (e.g. Python 30%, Rust 10%)",
+        "tl": "Ang porsyento sa tabi ng bawat skill ay nagpapakita kung magkano na ang natutunan ni Carl at kung gaano na siya kalapit sa pag-master ng teknolohiya:\n• 90-100% — Na-master na, ginagamit araw-araw (hal. Vite 97%, CSS 93%)\n• 70-89% — Komportable, matibay na experience (hal. JavaScript 80%)\n• 50-69% — May working knowledge, patuloy natututo (hal. Node.js 58%)\n• Wala sa 50% — Nag-eexplore pa (hal. Python 30%, Rust 10%)"
+      }
+    },
+    {
+      "tag": "project_status",
+      "patterns": {
+        "en": [
+          "percentage in projects",
+          "what does the percentage mean in projects",
+          "project percentage",
+          "what does 100 percent mean in projects",
+          "project status",
+          "stack percentage",
+          "percentage of stack",
+          "project stack percentage",
+          "percentage projects meaning",
+          "what do the percentages in projects mean",
+          "project bar",
+          "progress bar projects"
+        ],
+        "tl": [
+          "percentage sa projects",
+          "ano ibig sabihin ng percentage sa projects",
+          "project percentage",
+          "ano yung 100 percent sa projects",
+          "ano yung mga percentage sa projects",
+          "project status",
+          "stack percentage sa projects",
+          "ano yung bar sa projects",
+          "yung percentage sa projects anong ibig sabihin",
+          "anong ibig sabihin non sa projects",
+          "percentage ng project stack"
+        ]
+      },
+      "responses": {
+        "en": "The percentage beside each tech in a project shows how much that stack was used throughout the entire project. If React.js is 100% — it means React was used across the whole project from start to finish. It's not a skill rating — it's about how much that technology contributed to the project overall.",
+        "tl": "Ang porsyento sa tabi ng bawat tech sa isang project ay nagpapakita kung gaano kalaki ang nagamit na stack sa kabuuan ng project. Kung ang React.js ay 100% — ibig sabihin ginamit ang React sa buong project mula simula hanggang katapusan. Hindi ito skill rating — tungkol ito sa kontribusyon ng teknolohiya sa project."
+      }
+    },
+    {
+      "tag": "projects",
+      "patterns": {
+        "en": [
+          "projects",
+          "what have you built",
+          "portfolio",
+          "works",
+          "applications",
+          "apps",
+          "what did you make",
+          "carl's projects",
+          "show projects",
+          "list projects",
+          "all projects",
+          "what projects",
+          "what has carl built",
+          "carl's work",
+          "his projects",
+          "what did carl build",
+          "what did carl develop",
+          "any projects"
+        ],
+        "tl": [
+          "projects",
+          "ano ang nagawa mo",
+          "portfolio",
+          "apps",
+          "ginawa mo",
+          "mga projects",
+          "lahat ng projects",
+          "anong projects",
+          "anong ginawa ni carl",
+          "ano yung ginawa ni carl",
+          "carl projects",
+          "mga ginawa ni carl",
+          "mga apps ni carl",
+          "anong apps",
+          "nagawa ni carl",
+          "may projects ba"
+        ]
+      },
+      "responses": {
+        "en": "Carl has 4 main projects:\n1. EduLink LMS (2025) — Capstone LMS: Next.ts, Prisma ORM, PostgreSQL, Docker\n2. Jep Shop Inventory (2025) — Freelance inventory system: MERN stack\n3. Healthcare App (2023-2024) — AppCon competition: React.js + Tailwind\n4. BAO E-commerce (2024) — Final project: React.js + Tailwind\n\nWant details about any specific project?",
+        "tl": "May 4 pangunahing projects si Carl:\n1. EduLink LMS (2025) — Capstone LMS: Next.ts, Prisma ORM, PostgreSQL, Docker\n2. Jep Shop Inventory (2025) — Freelance inventory system: MERN stack\n3. Healthcare App (2023-2024) — AppCon competition: React.js + Tailwind\n4. BAO E-commerce (2024) — Final project: React.js + Tailwind\n\nGusto mo bang malaman ang detalye ng isang specific na project?"
+      }
+    },
+    {
+      "tag": "lms",
+      "patterns": {
+        "en": [
+          "lms",
+          "edulink",
+          "learning management",
+          "capstone",
+          "learning management system",
+          "edulink lms",
+          "capstone project",
+          "what is edulink",
+          "tell me about edulink",
+          "carl's capstone",
+          "learning system"
+        ],
+        "tl": [
+          "lms",
+          "edulink",
+          "capstone",
+          "capstone project",
+          "anong lms",
+          "anong edulink",
+          "ang lms ni carl",
+          "capstone ni carl",
+          "learning management system"
+        ]
+      },
+      "responses": {
+        "en": "EduLink is Carl's capstone project — a full-stack LMS where he served as primary programmer. Features: role-based access control, beneficiary performance tracking, Docker deployment. Stack: Next.ts + Prisma ORM + PostgreSQL. Completed, defended, and hardbound! 🎓",
+        "tl": "Ang EduLink ay ang capstone project ni Carl — isang full-stack LMS kung saan siya ang pangunahing programmer. May role-based access control, beneficiary performance tracking, at Docker deployment. Stack: Next.ts + Prisma ORM + PostgreSQL. Natapos, na-defend, at na-hardbound na! 🎓"
+      }
+    },
+    {
+      "tag": "experience",
+      "patterns": {
+        "en": [
+          "experience",
+          "work",
+          "job",
+          "freelance",
+          "worked",
+          "employment",
+          "career",
+          "work experience",
+          "what jobs",
+          "carl's experience",
+          "professional experience",
+          "work history",
+          "past work",
+          "freelance work",
+          "has carl worked",
+          "where has carl worked"
+        ],
+        "tl": [
+          "experience",
+          "trabaho",
+          "freelance",
+          "work",
+          "karanasan",
+          "work experience",
+          "anong trabaho",
+          "karanasan ni carl",
+          "trabaho ni carl",
+          "nagtrabaho ba si carl",
+          "freelance ni carl",
+          "past work ni carl",
+          "saan nagtrabaho si carl"
+        ]
+      },
+      "responses": {
+        "en": "Carl has two main work experiences:\n• Freelance Web Developer (2024) — Built responsive websites for 7 clients using HTML, CSS, JavaScript. Handled requirements, revisions, and deployment.\n• Capstone Full-Stack Developer (2025-2026) — Primary programmer for EduLink LMS: frontend, backend, database, and Docker deployment.",
+        "tl": "May dalawang pangunahing work experience si Carl:\n• Freelance Web Developer (2024) — Gumawa ng responsive websites para sa 7 kliyente gamit ang HTML, CSS, JavaScript.\n• Capstone Full-Stack Developer (2025-2026) — Pangunahing programmer ng EduLink LMS: frontend, backend, database, at Docker deployment."
+      }
+    },
+    {
+      "tag": "education",
+      "patterns": {
+        "en": [
+          "education",
+          "school",
+          "university",
+          "degree",
+          "study",
+          "college",
+          "course",
+          "what school",
+          "where did carl study",
+          "carl's school",
+          "lspu",
+          "laguna state",
+          "bsit",
+          "information technology",
+          "what course",
+          "major",
+          "wmad",
+          "what is carl studying"
+        ],
+        "tl": [
+          "paaralan",
+          "eskwela",
+          "kurso",
+          "degree",
+          "nag-aral",
+          "kolehiyo",
+          "saan nag-aral si carl",
+          "anong paaralan",
+          "lspu",
+          "laguna state",
+          "bsit",
+          "anong kurso",
+          "major ni carl",
+          "wmad",
+          "anong pinag-aaralan ni carl"
+        ]
+      },
+      "responses": {
+        "en": "Carl is studying Bachelor of Science in Information Technology (BSIT), major in Web and Mobile Application Development (WMAD) at Laguna State Polytechnic University (2022-2026). Currently in his 4th year! 🎓",
+        "tl": "Nag-aaral si Carl ng Bachelor of Science in Information Technology (BSIT), major sa Web and Mobile Application Development (WMAD) sa Laguna State Polytechnic University (2022-2026). 4th year na siya ngayon! 🎓"
+      }
+    },
+    {
+      "tag": "contact",
+      "patterns": {
+        "en": [
+          "contact",
+          "email",
+          "hire",
+          "reach",
+          "connect",
+          "linkedin",
+          "github",
+          "facebook",
+          "collaborate",
+          "how to contact",
+          "carl's contact",
+          "social media",
+          "socials",
+          "links",
+          "get in touch",
+          "message carl",
+          "reach out"
+        ],
+        "tl": [
+          "contact",
+          "email",
+          "hire",
+          "kumonekta",
+          "linkedin",
+          "github",
+          "facebook",
+          "makipag-ugnayan",
+          "paano makipag-ugnayan kay carl",
+          "contact ni carl",
+          "social media ni carl",
+          "links ni carl",
+          "facebook ni carl",
+          "paano mag-message kay carl"
+        ]
+      },
+      "responses": {
+        "en": "You can reach Carl through:\n• Facebook: facebook.com/karu.sutibunhama.3\n• LinkedIn: linkedin.com/in/arocha-carl-stephen-b3392b2b3\n• GitHub: github.com/Dodong2\n\nHe's open to Freelance Work and Collaborations! 👋",
+        "tl": "Maaari kang makipag-ugnayan kay Carl sa:\n• Facebook: facebook.com/karu.sutibunhama.3\n• LinkedIn: linkedin.com/in/arocha-carl-stephen-b3392b2b3\n• GitHub: github.com/Dodong2\n\nBukas siya sa Freelance Work at Collaborations! 👋"
+      }
+    },
+    {
+      "tag": "hire",
+      "patterns": {
+        "en": [
+          "hire",
+          "available",
+          "open to work",
+          "looking for job",
+          "entry level",
+          "junior developer",
+          "is carl available",
+          "is carl for hire",
+          "accepting projects",
+          "freelance available",
+          "need a developer",
+          "looking for developer"
+        ],
+        "tl": [
+          "hire",
+          "available",
+          "naghahanap ng trabaho",
+          "junior developer",
+          "open to work",
+          "available ba si carl",
+          "accepting projects si carl",
+          "kailangan ng developer",
+          "naghahanap ng developer"
+        ]
+      },
+      "responses": {
+        "en": "Yes! Carl is currently seeking an entry-level role. He's open to:\n• Freelance projects\n• Collaborations\n• Entry-level full-stack positions\n\nReach out via his LinkedIn, Facebook, or GitHub! 🚀",
+        "tl": "Oo! Si Carl ay kasalukuyang naghahanap ng entry-level na trabaho. Bukas siya sa:\n• Mga freelance projects\n• Collaborations\n• Entry-level full-stack positions\n\nMakipag-ugnayan sa kanya sa LinkedIn, Facebook, o GitHub! 🚀"
+      }
+    },
+    {
+      "tag": "farewell",
+      "patterns": {
+        "en": [
+          "bye",
+          "goodbye",
+          "see you",
+          "later",
+          "take care",
+          "good night",
+          "farewell",
+          "that's all",
+          "i'm done",
+          "no more questions",
+          "thanks bye",
+          "thank you bye"
+        ],
+        "tl": [
+          "paalam",
+          "bye",
+          "hanggang sa muli",
+          "sige na",
+          "uwi na ko",
+          "good night",
+          "ingat",
+          "salamat na lang",
+          "wala na akong tanong",
+          "ok na salamat",
+          "bye bye"
+        ]
+      },
+      "responses": {
+        "en": "Thanks for visiting Carl's portfolio! Feel free to come back anytime. Take care! 👋",
+        "tl": "Salamat sa pagbisita sa portfolio ni Carl! Bumalik ka kung may mga katanungan ka pa. Ingat! 👋"
+      }
+    },
+    {
+      "tag": "experience",
+      "patterns": {
+        "en": [
+          "experience",
+          "work",
+          "job",
+          "freelance",
+          "worked",
+          "employment",
+          "career",
+          "work experience",
+          "what jobs",
+          "carl's experience",
+          "professional experience",
+          "work history",
+          "past work",
+          "freelance work",
+          "has carl worked",
+          "where has carl worked",
+          "what is carl experience",
+          "carl work history",
+          "what did carl work on",
+          "carl's job history"
+        ],
+        "tl": [
+          "experience",
+          "trabaho",
+          "freelance",
+          "work",
+          "karanasan",
+          "work experience",
+          "anong trabaho",
+          "karanasan ni carl",
+          "trabaho ni carl",
+          "nagtrabaho ba si carl",
+          "freelance ni carl",
+          "past work ni carl",
+          "saan nagtrabaho si carl",
+          "ano yung experience ni carl",
+          "anong experience ni carl",
+          "anong nagawa ni carl",
+          "ano yung ginawa ni carl dati",
+          "anong work ni carl",
+          "may work experience ba si carl",
+          "anong trabaho nagawa ni carl"
+        ]
+      },
+      "responses": {
+        "en": "Carl has two main work experiences:\n• Freelance Web Developer (2024) — Built responsive websites for 7 clients using HTML, CSS, JavaScript. Handled client requirements, revisions, and deployment.\n• Capstone Full-Stack Developer (2025-2026) — Primary programmer for EduLink LMS: frontend, backend, database, and Docker deployment.",
+        "tl": "May dalawang pangunahing work experience si Carl:\n• Freelance Web Developer (2024) — Gumawa ng responsive websites para sa 7 kliyente gamit ang HTML, CSS, JavaScript. Nangasiwa ng requirements, revisions, at deployment.\n• Capstone Full-Stack Developer (2025-2026) — Pangunahing programmer ng EduLink LMS: frontend, backend, database, at Docker deployment."
+      }
+    },
+    {
+      "tag": "lms",
+      "patterns": {
+        "en": [
+          "lms",
+          "edulink",
+          "learning management",
+          "capstone",
+          "what is lms",
+          "what is edulink",
+          "tell me about lms",
+          "tell me about edulink",
+          "carl's lms",
+          "carl's capstone",
+          "the lms project",
+          "about the lms",
+          "lms project details",
+          "edulink details",
+          "what is the lms project",
+          "carl capstone project",
+          "what did carl build for capstone"
+        ],
+        "tl": [
+          "lms",
+          "edulink",
+          "capstone",
+          "anong lms",
+          "anong edulink",
+          "ang lms ni carl",
+          "capstone ni carl",
+          "kwento ang lms",
+          "detalye ng lms",
+          "ano yung lms",
+          "yung lms ni carl",
+          "tungkol sa lms",
+          "anong capstone ni carl",
+          "ano yung capstone project ni carl",
+          "anong ginawa ni carl sa capstone",
+          "yung learning management system ni carl"
+        ]
+      },
+      "responses": {
+        "en": "EduLink is Carl's capstone project — a full-stack LMS where he served as primary programmer. Features: role-based access control, beneficiary performance tracking, Docker deployment. Stack: Next.ts + Prisma ORM + PostgreSQL. Completed, defended, and hardbound! 🎓",
+        "tl": "Ang EduLink ay ang capstone project ni Carl — isang full-stack LMS kung saan siya ang pangunahing programmer. May role-based access control, beneficiary performance tracking, at Docker deployment. Stack: Next.ts + Prisma ORM + PostgreSQL. Natapos, na-defend, at na-hardbound na! 🎓"
+      }
+    }
+  ]
+}

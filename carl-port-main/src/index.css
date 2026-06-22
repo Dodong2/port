@@ -1,0 +1,48 @@
+@import "tailwindcss";
+/* global style */
+* {
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --font-xs: 8px;
+  --font-sm: 9px;
+  --font-md: 10px;
+}
+
+/* BODY */
+html, body, #root  {
+  font-family: "Press Start 2P", cursive;
+  /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  /* overflow: hidden; */
+  /* background-color: #F8F8FF; */
+  /* background-color: #212529; */
+  /* margin: 0; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* NES COMPONENTS */
+.nes-text, .nes-btn {
+  font-size: var(--font-xs);
+}
+
+/* for manual design */
+.image-rendering-pixelated {
+  image-rendering: pixelated;
+}
