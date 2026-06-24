@@ -12,11 +12,10 @@ export const HomeData: HomeTypes[] = [
         resume: MyResume,
         resumePDF: ResumePDF,
         dialogue: [
-            "Greetings! My name is Carl Stephen Arocha. I'm currently a fourth-year BSIT student and a vibe coder full stack developer.",
-            "As a web developer, I'm still at the beginner level, but I'm constantly learning and building projects to level up my skills.",
-            "I'm eager to expand my portfolio and open to collaborating on projects that match my skill set. Check out my skills and experience below!",
-            "Please click continue to view my resume and see what this warrior can bring to the table!",
-            "Thank you for taking the time to learn more about me. Let's build something awesome together!"
+            "Greetings! My name is Carl Stephen Arocha, a BS Information Technology graduate specializing in Web and Mobile Application Development.",
+            "I develop modern web and mobile applications with a focus on functionality, usability, and continuous improvement.",
+            "Please continue to explore my resume, technical skills, and project portfolio.",
+            "Thank you for visiting my portfolio."
         ],
         buttonLabels: [
             { label: 'Resume/Stats' },

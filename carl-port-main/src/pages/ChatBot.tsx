@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 
 type Message = { role: "user" | "bot"; text: string; time: string };
 
-const BOT_URL = "http://localhost:8000/chat";
+const BOT_URL = import.meta.env.VITE_BOT_URL ?? "";
 
 function getTime() {
   const now = new Date();

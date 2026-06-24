@@ -34,7 +34,7 @@ const PwaManifest: Partial<VitePWAOptions> = {
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/carl-main/",
+  // base: "/carl-main/",
   plugins: [react(),
   VitePWA(PwaManifest),
   tailwindcss()],

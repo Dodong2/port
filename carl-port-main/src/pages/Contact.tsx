@@ -3,7 +3,7 @@ import { ContactData } from "../data/ContactData"
 /* components */
 import PageTitle from "../components/PageTitle"
 import RetroButton from "../components/RetroPixelUI/RetroButton"
-import TypingLoopEffect from "../components/TypingLoopEffect"
+// import TypingLoopEffect from "../components/TypingLoopEffect"
 import DirectMessageModal from "../components/DirectMessageModal"
 /* images */
 import ShieldSlot from '../assets/rpgui/img/icons/shield-slot.png'
@@ -31,11 +31,11 @@ const Contact = () => {
           {ContactData.map((contact) => (
             < div key={contact.id}>
 
-              <div className='relative flex items-center justify-center text-center min-h-15'>
+              {/* <div className='relative flex items-center justify-center text-center min-h-15'>
                 <div className="absolute flex flex-col items-center gap-4">
                   <TypingLoopEffect texts={contact.message} className="lg:text-2xl sm:text-[15px] tracking-wider text-white mb-2.5" />
                 </div>
-              </div>
+              </div> */}
 
               <div className={`grid gap-6 mb-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`}>
 

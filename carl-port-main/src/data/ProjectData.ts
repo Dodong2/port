@@ -5,6 +5,8 @@ import Lms from '../assets/images/LMS.png'
 import Inventory from '../assets/images/inventory.png'
 import AppCon from '../assets/images/appcon.png'
 import Bao from '../assets/images/bao.png'
+import AttendanceN8n from '../assets/images/n8n.jpg'
+import TRipplesDigital from '../assets/images/TRipplesDigital.jpg'
 
 export const ProjectData: ProjectsTypes[] = [
     {
@@ -62,6 +64,36 @@ export const ProjectData: ProjectsTypes[] = [
         projectStats: [
             { label: 'React.js', value: 100 },
             { label: 'Tailwind.css', value: 100 },
+        ]
+    },
+    {
+        id: "5",
+        projectTitle: "WFH Attendance",
+        created: '2026',
+        image: AttendanceN8n,
+        descriptions: [
+            'During my internship at TRipplesPH, I identified challenges in tracking and reviewing work-from-home attendance records. To address this, I proposed and developed an automated attendance system using Telegram, n8n, and Google Sheets. Employees can record their time-in and time-out through a Telegram bot, and the data is automatically logged into Google Sheets for easier monitoring and reporting. The solution was adopted and utilized by the company.'
+        ],
+        projectStats: [
+            { label: 'n8n', value: 100 },
+            { label: 'Telegram Bot', value: 100 },
+            { label: 'Google Sheets', value: 100 },
+            { label: 'Automation', value: 100 }
+        ]
+    },
+    {
+        id: "6",
+        projectTitle: "TRipplesDigital Website",
+        created: '2026',
+        image: TRipplesDigital,
+        descriptions: [
+            'During my internship at TRipplesPH, I was tasked with developing a static corporate website for TRipples Digital. I built the website using React and Tailwind CSS, integrated EmailJS for contact form submissions, and handled the deployment to a production environment through cPanel.'
+        ],
+        projectStats: [
+            { label: 'React.js', value: 100 },
+            { label: 'Tailwind CSS', value: 100 },
+            { label: 'EmailJS', value: 100 },
+            { label: 'cPanel', value: 100 }
         ]
     }
 ]
