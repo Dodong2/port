@@ -68,14 +68,14 @@ export const SkillsData: SkillsType[] = [
             "• Postman",
             "• MongoDBCompass",
             "• Docker",
-            "• Vite",
+            "• N8N",
         ],
         programStats: [
             { label: "VS Code", value: 90 },
             { label: "Postman", value: 85 },
             { label: "MongoDBCompass", value: 74 },
             { label: "Docker", value: 67 },
-            { label: "Vite", value: 97 },
+            { label: "N8N", value: 42 },
         ]
     },
 
