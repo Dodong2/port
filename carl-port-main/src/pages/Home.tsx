@@ -52,19 +52,19 @@ const Home = () => {
             <RetroModal onClose={closeModal} animate={animate} size="lg">
               <div className="w-full max-h-[90vh] overflow-auto">
                 {/* Download button */}
-                <div className="sticky z-10 flex justify-center top-5 ">
+                {/* <div className="sticky z-10 flex justify-center top-5 ">
                   <RetroButton
                     color="red"
                     onClick={() => {
                       const link = document.createElement('a');
                       link.href = home.resumePDF;
-                      link.download = 'Carl_Stephen_Arocha_Resume.pdf';
+                      link.download = 'Carl_Stephen_Arocha_Resume_ATS.pdf';
                       link.click();
                     }}
                   >
                     DOWNLOAD
                   </RetroButton>
-                </div>
+                </div> */}
 
                 {/* Image container - perfectly centered */}
                 <div className="relative p-4 mt-5 overflow-auto">

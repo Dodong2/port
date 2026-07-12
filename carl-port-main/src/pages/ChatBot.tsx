@@ -55,15 +55,15 @@ export default function ChatBot() {
     setInput("");
     setLoading(true);
     try {
-      const res = await fetch(BOT_URL, {
+      const res = await fetch(`${BOT_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text }),
+        body: JSON.stringify({ question: text }),
       });
       const data = await res.json();
       setMessages((prev) => [
         ...prev,
-        { role: "bot", text: data.reply, time: getTime() },
+        { role: "bot", text: data.answer, time: getTime() },
       ]);
     } catch {
       setMessages((prev) => [
@@ -81,7 +81,7 @@ export default function ChatBot() {
 
   return (
     <>
-      
+
 
       <div
         className="
@@ -152,13 +152,12 @@ export default function ChatBot() {
                     `}
                   >
                     {msg.text}
-                 
+
                   </div>
 
                   <span
-                    className={`text-[10px] tracking-wider ${
-                      isBot ? "text-white/25" : "text-[#e9ff6b]/30"
-                    }`}
+                    className={`text-[10px] tracking-wider ${isBot ? "text-white/25" : "text-[#e9ff6b]/30"
+                      }`}
                   >
                     {msg.time}
                   </span>
