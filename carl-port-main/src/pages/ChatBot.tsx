@@ -61,6 +61,31 @@ export default function ChatBot() {
         body: JSON.stringify({ question: text }),
       });
       const data = await res.json();
+
+      if (res.status === 429) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "bot",
+            text: data.detail ?? "You've reached today's question limit. Try again tomorrow!",
+            time: getTime(),
+          },
+        ]);
+        return;
+      }
+
+      if (!res.ok) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "bot",
+            text: "Something went wrong. Please try again.",
+            time: getTime(),
+          },
+        ]);
+        return;
+      }
+
       setMessages((prev) => [
         ...prev,
         { role: "bot", text: data.answer, time: getTime() },
@@ -70,7 +95,7 @@ export default function ChatBot() {
         ...prev,
         {
           role: "bot",
-          text: "Sorry, hindi ako makonekta ngayon. Try again!",
+          text: "Sorry, I can't connect right now. Please try again!",
           time: getTime(),
         },
       ]);
