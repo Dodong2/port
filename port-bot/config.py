@@ -5,10 +5,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
 
 from supabase import create_client
 from groq import Groq
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
 # --- Supabase ---
 SUPABASE_URL = os.getenv("SUPABASE_URL")
@@ -34,11 +35,10 @@ if not GROQ_API_KEY:
 
 groq_client = Groq(api_key=GROQ_API_KEY)
 
-# --- Embedding model ---
-# Isang beses lang ito lo-load-in, dito na natin gagamitin sa
-# ingest.py AT sa retrieval.py, para consistent ang model na
-# ginagamit sa dalawang parte.
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-embedding_model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+_embedding_model = TextEmbedding(EMBEDDING_MODEL_NAME)
+
+def embed_text(text: str) -> list[float]:
+    return list(_embedding_model.embed([text])[0].tolist())
 
 TOP_K = int(os.getenv("TOP_K", "3"))

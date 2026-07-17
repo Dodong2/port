@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from config import supabase, embedding_model
+from config import supabase, embed_text
 
 DATA_PATH = Path(__file__).parent / "data" / "portfolio.json"
 
@@ -47,7 +47,7 @@ def main():
     
     print("Generating embeddings and uploading them to Supabase...")
     for chunk in chunks:
-        vector = embedding_model.encode(chunk).tolist()
+        vector = embed_text.encode(chunk).tolist()
         supabase.table("documents").insert(
             {"content": chunk, "embedding": vector}
         ).execute()
