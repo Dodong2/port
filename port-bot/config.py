@@ -36,7 +36,7 @@ if not GROQ_API_KEY:
 groq_client = Groq(api_key=GROQ_API_KEY)
 
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-_embedding_model = TextEmbedding(EMBEDDING_MODEL_NAME)
+_embedding_model = TextEmbedding(embed_name=EMBEDDING_MODEL_NAME)
 
 def embed_text(text: str) -> list[float]:
     return list(_embedding_model.embed([text])[0].tolist())
