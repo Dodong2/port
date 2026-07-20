@@ -1,4 +1,4 @@
-from config import supabase, embed_text, groq_client, GROQ_MODEL, TOP_K
+from config import supabase, embedding_model, groq_client, GROQ_MODEL, TOP_K
 
 PROMPT_TEMPLATE = """You are Carl's portfolio assistant chatbot. Answer the user's
 question using ONLY the context provided below. If you cannot find the
@@ -47,7 +47,7 @@ def save_to_cache(question: str, answer: str) -> None:
     
     
 def retrieved_chunks(question: str) -> list[str]:
-    query_vector = embed_text.encode(question).tolist()
+    query_vector = embedding_model.encode(question).tolist()
     result = supabase.rpc(
         "match_documents",
         {"query_embedding": query_vector, "match_count": TOP_K},
