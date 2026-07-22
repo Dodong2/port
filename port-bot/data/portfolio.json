@@ -1,102 +1,220 @@
 {
   "about": "Carl is a fresh graduate with a Bachelor of Science in Information Technology, majoring in Web and Mobile Application Development, and works as a Full-Stack Web Developer. He is experienced in developing web applications, business systems, and workflow automation solutions through academic, freelance, and internship projects. He is skilled in modern JavaScript technologies including React, Next.js, TypeScript, Node.js, and database management systems, with a proven ability to identify business challenges and deliver practical software solutions, including process automation and real-world production deployments. He is currently self-studying AI development, starting with Retrieval-Augmented Generation (RAG) and Cache-Augmented Generation (CAG), as a stepping stone into building AI-powered applications.",
-
   "site_behavior": "On the Skills and Projects sections of this portfolio, each card is hoverable - hovering over a project or skill card reveals additional details, including stats bars. On a Project card, the stats show the specific tools and technologies used on that particular project (for example, React.js, Tailwind CSS, EmailJS) - they indicate what was used to build that project, not a proficiency rating. On a Skills card, the stats show how knowledgeable Carl is in each language, framework, or tool listed under that category (Programming Languages, Frontend, Backend, Tools) - the percentage reflects his self-assessed familiarity/proficiency with that specific skill.",
-
   "contact": {
     "github": "github.com/Dodong2",
     "portfolio_url": "dodong2.github.io/carl-main/",
     "note": "Carl's contact and social media section is located at the bottom of the portfolio site. The social media icons there are clickable and link out to his profiles."
   },
-
   "skills": [
     {
       "category": "Programming Languages",
       "items": [
-        { "name": "JavaScript", "proficiency": 80 },
-        { "name": "TypeScript", "proficiency": 60 },
-        { "name": "PHP", "proficiency": 50 },
-        { "name": "Python", "proficiency": 30 },
-        { "name": "Rust", "proficiency": 10 }
+        {
+          "name": "JavaScript",
+          "proficiency": 80
+        },
+        {
+          "name": "TypeScript",
+          "proficiency": 60
+        },
+        {
+          "name": "PHP",
+          "proficiency": 50
+        },
+        {
+          "name": "Python",
+          "proficiency": 30
+        },
+        {
+          "name": "Rust",
+          "proficiency": 10
+        }
       ]
     },
     {
       "category": "Frontend",
       "items": [
-        { "name": "CSS", "proficiency": 93 },
-        { "name": "HTML", "proficiency": 91 },
-        { "name": "Tailwind", "proficiency": 82 },
-        { "name": "React.js/TS", "proficiency": 73 },
-        { "name": "React Native", "proficiency": 68 },
-        { "name": "Next.ts", "proficiency": 65 }
+        {
+          "name": "CSS",
+          "proficiency": 93
+        },
+        {
+          "name": "HTML",
+          "proficiency": 91
+        },
+        {
+          "name": "Tailwind",
+          "proficiency": 82
+        },
+        {
+          "name": "React.js/TS",
+          "proficiency": 73
+        },
+        {
+          "name": "React Native",
+          "proficiency": 68
+        },
+        {
+          "name": "Next.ts",
+          "proficiency": 65
+        }
       ]
     },
     {
       "category": "Backend",
       "items": [
-        { "name": "Postgresql", "proficiency": 73 },
-        { "name": "Prisma ORM", "proficiency": 66 },
-        { "name": "MySQL", "proficiency": 61 },
-        { "name": "Node.js", "proficiency": 58 },
-        { "name": "Firebase", "proficiency": 54 },
-        { "name": "MongoDB", "proficiency": 44 }
+        {
+          "name": "Postgresql",
+          "proficiency": 73
+        },
+        {
+          "name": "Prisma ORM",
+          "proficiency": 66
+        },
+        {
+          "name": "MySQL",
+          "proficiency": 61
+        },
+        {
+          "name": "Node.js",
+          "proficiency": 58
+        },
+        {
+          "name": "Firebase",
+          "proficiency": 54
+        },
+        {
+          "name": "MongoDB",
+          "proficiency": 44
+        }
       ]
     },
     {
       "category": "Tools",
       "items": [
-        { "name": "VS Code", "proficiency": 90 },
-        { "name": "Postman", "proficiency": 85 },
-        { "name": "MongoDBCompass", "proficiency": 74 },
-        { "name": "Docker", "proficiency": 67 },
-        { "name": "N8N", "proficiency": 42 }
+        {
+          "name": "VS Code",
+          "proficiency": 90
+        },
+        {
+          "name": "Postman",
+          "proficiency": 85
+        },
+        {
+          "name": "MongoDBCompass",
+          "proficiency": 74
+        },
+        {
+          "name": "Docker",
+          "proficiency": 67
+        },
+        {
+          "name": "N8N",
+          "proficiency": 42
+        }
       ]
     }
   ],
-
   "projects": [
     {
       "title": "TRipplesDigital Website",
       "year": "2026",
       "description": "During his internship at TRipplesPH, Carl was tasked with developing a static corporate website for TRipples Digital. He built the website using React and Tailwind CSS, integrated EmailJS for contact form submissions, and handled the deployment to a production environment through cPanel.",
-      "tools_used": ["React.js", "Tailwind CSS", "EmailJS", "cPanel"]
+      "tools_used": [
+        "React.js",
+        "Tailwind CSS",
+        "EmailJS",
+        "cPanel"
+      ]
     },
     {
       "title": "WFH Attendance",
       "year": "2026",
       "description": "During his internship at TRipplesPH, Carl identified challenges in tracking and reviewing work-from-home attendance records. To address this, he proposed and developed an automated attendance system using Telegram, n8n, and Google Sheets. Employees can record their time-in and time-out through a Telegram bot, and the data is automatically logged into Google Sheets for easier monitoring and reporting. The solution was adopted and used by the company.",
-      "tools_used": ["n8n", "Telegram Bot", "Google Sheets", "Automation"]
+      "tools_used": [
+        "n8n",
+        "Telegram Bot",
+        "Google Sheets",
+        "Automation"
+      ]
     },
     {
       "title": "LMS - EduLink",
       "year": "2025",
       "description": "EduLink is a Learning Management System (LMS) capstone web application. As part of a group project, Carl served as the programmer, responsible for coding and deployment.",
-      "tools_used": ["Next.ts", "Prisma ORM", "PostgreSQL", "Docker"]
+      "tools_used": [
+        "Next.ts",
+        "Prisma ORM",
+        "PostgreSQL",
+        "Docker"
+      ]
     },
     {
       "title": "Inventory System",
       "year": "2025",
       "description": "This was a freelance project for one of Carl's subjects. His client was Jep Shop, a motorcycle parts business. Together with his classmates, he developed an inventory management system for them.",
-      "tools_used": ["MongoDB", "Express.js", "React.js", "Node.js"]
+      "tools_used": [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js"
+      ]
     },
     {
       "title": "Healthcare App - AppCon",
       "year": "2023-2024",
       "description": "Health Electronic Alert Network AppCon is a competition focused on developing web or mobile applications that aim to resolve social issues in the Philippines. Since this was a team project, Carl's contributions were in front-end development, where he coded the UI design into the website and hosted it.",
-      "tools_used": ["React.js", "CSS", "Tailwind CSS"]
+      "tools_used": [
+        "React.js",
+        "CSS",
+        "Tailwind CSS"
+      ]
     },
     {
       "title": "E-commerce - Business Affairs Office",
       "year": "2024",
       "description": "This is Carl's final project for the subjects Multimedia Systems and Web Systems and Technologies. His classmates handled the website design while he coded its UI and deployed it.",
-      "tools_used": ["React.js", "Tailwind CSS"]
+      "tools_used": [
+        "React.js",
+        "Tailwind CSS"
+      ]
     }
   ],
-
   "past_work": [
     {
       "title": "Portfolio Chatbot v1",
       "description": "Carl previously built a portfolio chatbot using Python FastAPI with a scikit-learn text classifier (TF-IDF + SVM), SQLite for storing learned question-answer patterns, and a React frontend component. It was bilingual (English/Filipino) and deployed on Render.com's free tier."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How many projects has Carl completed?",
+      "answer": "Carl has completed a total of 6 projects listed on this portfolio: (1) TRipplesDigital Website, (2) WFH Attendance, (3) LMS - EduLink, (4) Inventory System, (5) Healthcare App - AppCon, and (6) E-commerce - Business Affairs Office."
+    },
+    {
+      "question": "Can you list or give all of Carl's projects?",
+      "answer": "Here are all 6 of Carl's projects: (1) TRipplesDigital Website (2026) - a corporate website built with React and Tailwind CSS. (2) WFH Attendance (2026) - an automated attendance system using n8n, Telegram, and Google Sheets. (3) LMS - EduLink (2025) - a Learning Management System built with Next.ts, Prisma ORM, and PostgreSQL. (4) Inventory System (2025) - an inventory management system for Jep Shop using MongoDB and Express.js. (5) Healthcare App - AppCon (2023-2024) - a competition web/mobile app for social issues in the Philippines. (6) E-commerce - Business Affairs Office (2024) - a final project e-commerce site."
+    },
+    {
+      "question": "What is this website or portfolio about?",
+      "answer": "This is Carl's personal portfolio website. It showcases his skills, projects, and professional background as a fresh graduate and full-stack web developer, and includes this chatbot assistant to answer questions about his work."
+    },
+    {
+      "question": "How does this website work? What can I do here?",
+      "answer": "On the Skills and Projects sections, each card is hoverable to reveal more details, including stats bars. On a Project card, the stats show the tools/technologies used on that project. On a Skills card, the stats show Carl's self-assessed proficiency percentage for that skill. The contact and social media section, with clickable icons linking to his profiles, is at the bottom of the site."
+    },
+    {
+      "question": "Is Carl looking for a job or open to work?",
+      "answer": "Yes, Carl is a fresh graduate currently seeking full-time opportunities as a full-stack web developer, while also self-studying AI development (RAG and CAG) to expand his skill set."
+    },
+    {
+      "question": "What are Carl's strongest skills?",
+      "answer": "Based on his self-assessed proficiency, Carl's strongest skills are CSS (93%), HTML (91%), Tailwind (82%), VS Code (90%), and Postman (85%). He is also proficient in JavaScript (80%) and React.js/TS (73%)."
+    },
+    {
+      "question": "How can I contact Carl?",
+      "answer": "You can find Carl's contact and social media links at the bottom of this portfolio site, including his GitHub at github.com/Dodong2."
     }
   ]
 }

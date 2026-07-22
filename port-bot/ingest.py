@@ -33,6 +33,9 @@ def build_chunks() -> list[str]:
     for w in data["past_work"]:
         chunks.append(f"Past work - {w['title']}: {w['description']}")
         
+    for faq in data.get("faq", []):
+        chunks.append(f"Q: {faq['question']} A: {faq['answer']}")
+        
     return chunks
 
 def main():
@@ -46,11 +49,12 @@ def main():
     supabase.table("documents").delete().neq("id", 0).execute()
     
     print("Generating embeddings and uploading them to Supabase...")
+    rows=[]
     for chunk in chunks:
         vector = embedding_model.encode(chunk).tolist()
-        supabase.table("documents").insert(
-            {"content": chunk, "embedding": vector}
-        ).execute()
+        rows.append({"content": chunk, "embedding": vector})
+        
+    supabase.table("documents").insert(rows).execute()
     
     print(f"\nDone! {len(chunks)} chunks have been uploaded to Supabase.")
     print("You can now run: python query.py")

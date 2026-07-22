@@ -1,28 +1,42 @@
-# Gumamit ng slim base image para mas mabilis mag-build
+# ---------- STAGE 1: Builder ----------
+FROM python:3.11-slim AS builder
+
+WORKDIR /app
+
+# CPU-only torch muna (sobrang laki ng CUDA version, hindi naman
+# ginagamit sa laptop/VPS na walang GPU - ito ang pinakamalaking
+# space-saver dito)
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# I-bake ang embedding model sa build stage, sa sarili nitong cache
+# folder para ma-kopya lang sa final stage
+ENV HF_HOME=/app/.cache/huggingface
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')"
+
+# ---------- STAGE 2: Runtime (yung aactual na ipa-deploy) ----------
 FROM python:3.11-slim
 
 WORKDIR /app
 
-# I-install muna ang dependencies (hiwalay na step para ma-cache ni
-# Docker - hindi na ulit i-i-install kung hindi nagbago ang
-# requirements.txt sa susunod na build)
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# I-kopya lang ang mga naka-install na packages mula sa builder stage
+# (hindi na kasama yung build tools/cache na ginamit lang habang nag-i-install)
+COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
+COPY --from=builder /app/.cache/huggingface /app/.cache/huggingface
 
-# I-download ang embedding model DURING BUILD TIME - mabilis ang
-# internet ng build servers, kaya dito na natin gagawin 'to, hindi sa
-# runtime. Mabe-bake ito sa loob mismo ng image.
-RUN python -c "from fastembed import TextEmbedding; TextEmbedding(model_name='sentence-transformers/all-MiniLM-L6-v2')"
-
-# Ngayon i-kopya ang natitirang code
-COPY . .
-
-# Runtime: gamitin na ang naka-bake nang model, huwag nang mag-check
-# online pa
+# Runtime: gamitin na lang ang naka-bake na model, offline na
+ENV HF_HOME=/app/.cache/huggingface
 ENV HF_HUB_OFFLINE=1
 ENV TRANSFORMERS_OFFLINE=1
 
-# HF Spaces (Docker SDK) ay umaasang naka-expose sa port 7860
-EXPOSE 7860
+# Non-root user para mas secure (senior practice din 'to)
+RUN useradd -m appuser
+COPY --chown=appuser:appuser . .
+USER appuser
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
+EXPOSE 8000
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
