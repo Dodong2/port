@@ -76,3 +76,11 @@ export interface BotTypes {
     botImg: string
     descriptions: string
 }
+
+export type ChatRole = "user" | "bot";
+
+export interface ChatMessage {
+  role: ChatRole;
+  text: string;
+  time: string;
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BotData } from "../data/BotData";
 /* pages */
-import ChatBot from "./ChatBot";
+import ChatBot from "../components/ChatBot/ChatBot";
 
 const BotPage = () => {
     const [openBot, setOpenBot] = useState(false)
