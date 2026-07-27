@@ -5,6 +5,10 @@ interface baseProps {
     placeholder?: string
     required?: boolean
     className?: string
+    pattern?: string
+    title?: string
+    maxLength?: number
+    autoComplete?: string
 }
 
 interface inputProps extends baseProps {
@@ -29,6 +33,10 @@ const RetroInput = (props: RetroInputPops) => {
                 name={props.name}
                 placeholder={props.placeholder}
                 required={props.required}
+                pattern={props.pattern}
+                title={props.title}
+                maxLength={props.maxLength}
+                autoComplete={props.autoComplete}
                 className='text-white p-1 bg-[#1a1a2e] from-gray-800 to-gray-900 border-4 border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,0.8)] relative'
                 style={{
                     backgroundImage: `
