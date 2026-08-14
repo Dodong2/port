@@ -12,13 +12,11 @@ RATE_LIMIT_PER_DAY = int(os.getenv("RATE_LIMIT_PER_DAY", "4"))
 
 app = FastAPI(title="Portfolio RAG Chatbot (Supabase + Groq")
 
+origins = [o.strip() for o in os.getenv("CORS_ORIGINS", "").split(",") if o.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:3000",
-        "https://carl-port-bot.netlify.app"
-    ],
+    allow_origins=origins,
     allow_methods=["POST"],
     allow_headers=["*"],
 )
